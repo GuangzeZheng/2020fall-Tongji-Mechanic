@@ -1,0 +1,16 @@
+\contentsline {section}{\numberline {一、}第一问}{3}{section.1}%
+\contentsline {subsection}{\numberline {1.1}方程建立}{3}{subsection.1.1}%
+\contentsline {section}{\numberline {二、}第二问}{4}{section.2}%
+\contentsline {subsection}{\numberline {2.1}求解方程}{4}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}曲线绘制}{4}{subsection.2.2}%
+\contentsline {section}{\numberline {三、}第三问}{6}{section.3}%
+\contentsline {subsection}{\numberline {3.1}频率响应函数$H_{y,x}(\omega )$的推导}{6}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}频率响应函数$H_{y,x}(\omega )$的图像}{6}{subsection.3.2}%
+\contentsline {section}{\numberline {四、}问题四}{7}{section.4}%
+\contentsline {section}{\numberline {五、}问题五}{8}{section.5}%
+\contentsline {subsection}{\numberline {5.1}模型的修改1}{8}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}新曲线1}{8}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}模型的修改2}{9}{subsection.5.3}%
+\contentsline {subsection}{\numberline {5.4}新曲线2}{9}{subsection.5.4}%
+\contentsline {section}{参考文献}{10}{figure.caption.15}%
+\contentsfinish 

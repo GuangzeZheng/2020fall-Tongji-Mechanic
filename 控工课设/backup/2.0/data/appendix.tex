@@ -1,0 +1,35 @@
+\chapter{LQR在matlab中的代码}
+\label{cha:engorg}
+\begin{lstlisting}
+A=[0 1 0 0; 0 0 0 0; 0 0 0 1; 0 0 29.4 0];
+B=[0 1 0 3]';
+C=[1 0 0 0; 0 0 0 1];
+D=[0 0]';
+Co=ctrb(A,B);
+rank(Co)
+Ob=obsv(A,C);
+rank(Ob)
+\end{lstlisting}
+
+\begin{lstlisting}
+A=[0 1 0 0;0 0 0 0;0 0 0 1;0 0 29.4 0];
+B=[0 1 0 3]';
+C=[1 0 0 0;0 0 1 0];
+D=[0 0 ]';
+Q11=1000;
+Q33=100;
+Q=[Q11 0 0 0;0 0 0 0;0 0 Q33 0;0 0 0 0];
+R=1;
+K=lqr(A,B,Q,R);
+Ac=(A-B*K);
+T=0:0.001:5;
+U=0.2*ones(size(T));
+[Y,X]=lsim(Ac,B,C,D,U,T);
+plot(T,X(:,1),'-g','LineWidth',1);
+hold on;
+plot(T,X(:,2),'-.b','LineWidth',1);
+plot(T,X(:,3),'-','LineWidth',1);
+plot(T,X(:,4),'-r','LineWidth',1);
+hold off;
+legend('x','dotx','fai','dotfai');
+\end{lstlisting}

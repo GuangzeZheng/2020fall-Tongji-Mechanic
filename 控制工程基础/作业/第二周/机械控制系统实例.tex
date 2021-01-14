@@ -1,0 +1,182 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+]{article}
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\hypersetup{
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+\urlstyle{same} % disable monospaced font for URLs
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+
+\author{}
+\date{}
+
+\begin{document}
+
+1851960 郑光泽
+
+\hypertarget{header-n2}{%
+\section{机械控制系统实例}\label{header-n2}}
+
+\hypertarget{header-n3}{%
+\subsection{【机械】瓦特离心调速器控制蒸汽机}\label{header-n3}}
+
+\begin{figure}
+\centering
+\includegraphics{https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2757644393,315721103\&fm=26\&gp=0.jpg}
+\caption{}
+\end{figure}
+
+\textbf{原理解释：}
+
+\begin{itemize}
+\item
+  利用蒸汽机带动一根竖直的轴转动，这根轴的顶端有两根铰接的等长细杆，细杆另一端各有一个金属球；
+\item
+  当蒸汽机转动过快时，竖轴也转动加快，两个金属小球在离心力作用下，由于转动快而升高，这时通过与小球连接的连杆便将蒸汽阀门关小，从而蒸汽机的转速也便可以降低；
+\item
+  反之，若蒸汽机的转速过慢，则竖轴转动慢了，小球的位置也便下降，这时连杆便将阀门开大，从而使蒸汽机转速加快。
+\end{itemize}
+
+\textbf{图解：}
+
+\begin{figure}
+\centering
+\includegraphics{C:/Users/zgz/AppData/Roaming/Typora/typora-user-images/image-20201004104755733.png}
+\caption{}
+\end{figure}
+
+\textbf{特点：}
+
+\begin{itemize}
+\item
+  闭环控制系统
+\item
+  恒值控制系统
+\item
+  连续控制系统
+\end{itemize}
+
+\hypertarget{header-n24}{%
+\subsection{【机械】手动剪切机}\label{header-n24}}
+
+\begin{figure}
+\centering
+\includegraphics{C:/Users/zgz/AppData/Roaming/Typora/typora-user-images/image-20201004105849513.png}
+\caption{}
+\end{figure}
+
+\textbf{原理解释：}
+
+\begin{itemize}
+\item
+  利用杠杆原理，工具台固定在载体上。使用行星齿轮，手动力量施加在卫星齿轮上，其它齿轮固定；
+\item
+  手按压手柄，可实现剪切运动。
+\end{itemize}
+
+\textbf{图解：}
+
+\textbf{特点：}
+
+\begin{itemize}
+\item
+  开环控制系统
+\item
+  随动控制系统
+\item
+  连续控制系统
+\end{itemize}
+
+\hypertarget{header-n42}{%
+\section{液压控制系统}\label{header-n42}}
+
+\hypertarget{header-n43}{%
+\subsection{【液压】液压千斤顶}\label{header-n43}}
+
+\begin{figure}
+\centering
+\includegraphics{https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2981038232,2700360624\&fm=26\&gp=0.jpg}
+\caption{}
+\end{figure}
+
+\textbf{原理解释：}
+
+\begin{itemize}
+\item
+  提起手柄，小活塞向上移动，使其下端形成局部真空，单向阀14打开，从油箱中吸油；
+\item
+  压下手柄，小活塞向下移动，使其下端压强增大，单向阀14关闭，单向阀7打开，使下腔油液经过管道输入举起油缸下腔，使大活塞向上移动，顶起重物；
+\item
+  再次提起手柄吸油，单向阀7自动关闭，油液不能倒流，重物不会下落。
+\end{itemize}
+
+\textbf{图解：}
+
+\begin{figure}
+\centering
+\includegraphics{C:/Users/zgz/AppData/Roaming/Typora/typora-user-images/image-20201004141701590.png}
+\caption{}
+\end{figure}
+
+\textbf{特点：}
+
+\begin{itemize}
+\item
+  开环控制系统
+\item
+  随动控制系统
+\item
+  连续控制系统
+\end{itemize}
+
+\end{document}
